@@ -1,0 +1,182 @@
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2; /* Light gray background color */
+    /*padding: 15px; !* Add padding for better spacing *!*/
+    margin-bottom: 20px; /* Optional: Add margin to the bottom */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-direction: row; /* Set flex-direction to row */
+}
+
+dt {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-right: 20px;
+}
+
+span {
+    margin-right: 10px;
+}
+.form-control,
+.form-select {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.date-range {
+    display: flex;
+    align-items: center;
+}
+
+.date-range input {
+    margin-right: 5px;
+}
+
+#searchBtn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px; /* Optional: Add border-radius for rounded button */
+    margin-top: -10px;
+}
+
+#searchBtn:hover {
+    background-color: #0056b3;
+}
+
+/* ul li 영역 */
+li {
+    list-style: none;
+    padding-left : 20px;
+}
+
+/* table */
+.list-search-table {
+    font-size: 18px;
+    border : 1px solid gray;
+    width: 100%;
+    height: 80px;
+}
+
+/* 전체 td 영역 */
+.list-search-table td {
+    background-color: lightgray;
+    padding : 5px 10px 5px 10px;
+}
+
+/* input 박스를 제외한 영역 (추가할 시 자동 적용을 위해) */
+.list-search-table td:nth-last-child(2n+3){
+
+    border-left : 1px solid gray;
+    min-width : 100px;
+    text-align: center;
+}
+
+
+/* 각각 인풋박스 설정 */
+/* 날짜 박스 설정 */
+.list-search-table #listSearchDate{
+    min-width: 300px;
+}
+.list-search-table #listSearchDate input {
+    max-width : 140px;
+    text-align: center;
+}
+
+/* 분류 박스 설정 */
+.list-search-table  #listSearchProductClass select{
+    min-width: 18px;
+    width: 100%;
+    min-height: 24px;
+
+}
+
+/* 전체 박스 설정 */
+.list-search-table input {
+    min-height: 26px;
+}
+
+/* 검색 박스 영역 */
+.list-search-table td:last-child {
+    text-align: right;
+}
+
+.list-search-table td:last-child input{
+
+}
+
+/* toast-grid custom */
+.grid-class {
+    padding : 20px;
+}
+
+.tui-grid-container {
+    min-width: 600px;
+}
+
+/* page title */
+.page-title {
+    margin-top: 10px;
+    padding: 20px;
+    margin-bottom: -20px;
+}
+
+.title-text {
+    font-size: 16px;
+    color: #333; /* Adjust the color as needed */
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.right-btn{
+    margin-top: 15px;
+    margin-bottom: -10px;
+    margin-right : 20px;
+    text-align: right;
+}
+
+.right-btn input[type="button"] {
+    padding: 4px 9px;
+    margin-right: 10px;
+    background-color: #fff; /* White background for all buttons */
+    color: #000; /* Black text color for all buttons */
+    border: 1px solid #000; /* Blue border for all buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.right-btn input[type="button"]:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.grid-container {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.btn_div {overflow:hidden;margin:10px 0;}
+.btn_div .left_div{float:left;}
+.btn_div .right_div{float:right;}
+.twinbox{border:solid #eaeaea;border-width: 0 1px;}

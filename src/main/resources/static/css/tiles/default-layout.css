@@ -1,0 +1,79 @@
+
+
+/* Tiles 전체 */
+
+.tiles-all {
+
+}
+
+
+.tiles-middle {
+    position: absolute;
+    /* 각각 페이지별로 width 고정 사용을 안하기 위해 flex로 설정 */
+    display : flex;
+    width : 100%;
+    top: 56px;
+    bottom : 0;
+    overflow: hidden;
+}
+
+.tiles-middle .sb-sidenav-footer {
+    margin-bottom : auto;
+}
+
+#layoutSidenav-nav .sb-sidenav-footer {
+     min-width: 135px;
+}
+
+#layoutSidenav-nav #collapseLayouts {
+    min-width: 155px;
+}
+
+#layoutSidenav-nav .sb-sidenav-menu-nested{
+    min-width: 126px;
+}
+
+/* Tiles 오른쪽 영역 (메인) */
+.tiles-main {
+    /* ! grid 영역 relative 사용을 위한 block relative 처리 */
+    display: block;
+    position: relative;
+    min-width: 300px;
+    height : 100%;
+    width : 100%;
+    padding : 0;
+    overflow : auto;
+}
+
+/* Tiles 왼쪽 영역 (네비) */
+
+.sb-nav-fixed {
+}
+
+#layoutSidenav-nav {
+    height : 100%;
+    overflow: hidden;
+    max-width : 200px;
+}
+
+.sb-nav-fixed {
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 100px;
+    background: gray;
+    font-size: 14px;
+    z-index: 100;
+    margin-left: -200px;
+    transform: translate3d(-200px, 0, 0);
+    transition: all 0.2s;
+
+}
+
+.sb-nav-fixed.sb-toggle {
+    background: gray;
+    transform: translate3d(0, 0, 0);
+    margin-left: 0px;
+    transition: all 0.2s;
+}
