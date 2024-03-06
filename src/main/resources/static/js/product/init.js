@@ -9,13 +9,13 @@ function eventbing() {
 
     /* 검색버튼 눌렀을 때 */
     $('#searchBtn').click(function(){
-        refreshGrid();
+        refreshProductGrid();
     });
 
     /* 엔터 키 눌렀을 때 */
     $('#productName').keydown(function(key) {
         if (key.keyCode == 13) {
-            refreshGrid();
+            refreshProductGrid();
         }
     });
 

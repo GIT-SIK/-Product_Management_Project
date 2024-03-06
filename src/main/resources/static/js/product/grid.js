@@ -50,7 +50,7 @@ function initializeGrid() {
     fetchData('/product/getProductByAll', params)
         .then(result => {
             console.log(result);
-            productGrid = createGrid(result);
+            productGrid = createProductGrid(result);
             //Stock Grid~ //
             stockGrid = createStockGrid()
             productGrid.on('dblclick', (e) => {
@@ -84,7 +84,7 @@ function initializeGrid() {
  * Product 영역
  */
 
-function refreshGrid() {
+function refreshProductGrid() {
     var params = {
         productName: $("#productName").val(),
     }
@@ -98,12 +98,13 @@ function refreshGrid() {
         });
 }
 
-function createGrid(data) {
+function createProductGrid(data) {
     return new tui.Grid({
         el: document.getElementById('productGrid'),
         scrollX: false,
         scrollY: false,
         rowHeaders: ['rowNum', 'checkbox'],
+        bodyHeight: 400,
         columns: [
             {
                 header: '바코드번호',
@@ -115,6 +116,10 @@ function createGrid(data) {
             }
 
         ],
+        pageOptions: {
+            useClient: true,
+            perPage: 10
+        },
         data: data
     });
 
@@ -142,6 +147,7 @@ function createStockGrid(){
         el: document.getElementById('stockGrid'),
         scrollX: false,
         scrollY: false,
+        bodyHeight: 400,
         columns: [
             {
                 header: '등록일자',
