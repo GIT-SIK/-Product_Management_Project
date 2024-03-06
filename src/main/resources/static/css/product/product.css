@@ -1,0 +1,39 @@
+/* toast-grid custom */
+.grid-class {
+    padding : 20px;
+}
+
+.tui-grid-container {
+    min-width: 600px;
+}
+
+/* product title */
+.page-title {
+    margin-top: 10px;
+    padding: 20px;
+    margin-bottom: -20px;
+}
+
+
+/* 등록 수정 삭제 버튼 */
+.right-btn{
+    margin-top: 15px;
+    margin-bottom: -25px;
+    text-align: right;
+}
+
+.right-btn input[type="button"] {
+    font-size : 13px;
+    padding: 4px 9px;
+    margin-right: 10px;
+    background-color: #fff; /* White background for all buttons */
+    color: #000; /* Black text color for all buttons */
+    border: 1px solid #000; /* Blue border for all buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.right-btn input[type="button"]:hover {
+    background-color: lightgray;
+}

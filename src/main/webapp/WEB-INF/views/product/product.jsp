@@ -6,8 +6,9 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt_rt"%>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="/css/product/product.css" />
     <link rel="stylesheet" type="text/css" href="/css/product/product-search.css" />
-    <link rel="stylesheet" type="text/css" href="/css/product/info-modal.css" />
+    <link rel="stylesheet" type="text/css" href="/css/product/product-modal.css" />
 </head>
 <body>
 <div class="page-title">
